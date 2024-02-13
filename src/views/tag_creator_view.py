@@ -16,4 +16,4 @@ class TagCreatorView:
         # logica de regra de negocio
         formatted_response = tag_creator_controller.create(product_code)
         # retorno http
-        return HttpResponse(status_code=200, body=formatted_response)
+        return HttpResponse(status_code=201, body=formatted_response)
